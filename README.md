@@ -3,51 +3,6 @@
 This repo contains a suite of Python sample code that desmonstrates the use of
 OANDA's v20 REST API along with OANDA's v20 bindings for Python.
 
-## Setup
-
-The following procedure describes how to create a virtualenv appropriate for
-running the v20 sample code:
-
-```bash
-#
-# Set up the virtualenv and install required packages. By default the
-# virtualenv will be setup to use python3. If python2 is desired, use the make
-# target "bootstrap-python2" and the virtualenv will be created under
-# "env-python2"
-#
-user@host: ~/v20-python-samples$ make bootstrap
-
-#
-# Enter the virtualenv
-#
-user@host: ~/v20-python-samples$ source env/bin/activate
-
-#
-# Create the v20-* launch entry points in the virtualenv. These entry points
-# are aliases for the scripts which use the v20 REST API to interact with an
-# account (e.g. v20-market-order, v20-trades-list, etc.)
-#
-(env)user@host: ~/v20-python-samples$ python setup.py develop
-```
-
-## Entering the v20 environment
-
-The v20-python-samples virtualenv must be activated to ensure that the current
-enviroment is set up correctly to run the sample code. This is done using the
-virualenv's activate script:
-
-```bash
-user@host: ~/v20-python-samples$ source env/bin/activate
-(env)user@host: ~/v20-python-samples$
-```
-
-The "(env)" prefix found in the prompt indicates that we are using the
-virtualenv "env".  To leave the virtualenv, run the deactivate function:
-
-```bash
-(env)user@host: ~/v20-python-samples$ deactivate
-user@host: ~/v20-python-samples$ 
-```
 
 
 ## Configuration-free Example
