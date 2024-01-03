@@ -7,6 +7,7 @@ import v20
 from pricing.view import price_to_string
 
 
+
 def main():
     """
     Create a Market Order in an Account based on the provided command-line
@@ -79,7 +80,7 @@ def main():
     # )
     
     response2 = api.order.list("101-001-27735311-001")
-    
+    response3 = api.position.list_open("101-001-27735311-001")
     # print_orders(response2)
     
    
@@ -99,7 +100,7 @@ def main():
     # print("")
 
     # print_order_create_response_transactions(response)
-
+    print(str(3))
 
 if __name__ == "__main__":
     main()
